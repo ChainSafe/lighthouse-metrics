@@ -1,11 +1,16 @@
 [
-  {
-    "labels": {
-      "job": "nodes"
-    },
-    "targets": [
-      "localhost:5054",
-      "localhost:5064"
-    ]
-  }
+    {
+        "labels": {
+            "job": "nodes"
+        },
+        "targets": [
+            "localhost:52525",
+            "localhost:52526",
+            "localhost:52527",
+            "localhost:62626",
+            "localhost:62627",
+            "localhost:62628",
+            "localhost:62629"
+        ]
+    }
 ]
