@@ -16,7 +16,7 @@ services:
         # network_mode: host
         extra_hosts:
           - "host.docker.internal:host-gateway"
-        #   - "host.docker.internal:192.168.0.105"
+          - "localhost:host-gateway"
         ports:
           - "0.0.0.0:9090:9090"
     grafana:
@@ -25,9 +25,10 @@ services:
         volumes:
             - grafana-data:/var/lib/grafana
         restart: always
-        network_mode: host
+        # network_mode: host
         extra_hosts:
           - "host.docker.internal:host-gateway"
+          - "localhost:host-gateway"
         ports:
           - "0.0.0.0:3000:3000"
         #   - "host.docker.internal:192.168.0.105"
